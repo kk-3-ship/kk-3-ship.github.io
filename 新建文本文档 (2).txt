@@ -1,0 +1,168 @@
+chengkexin-website/
+├── css/
+│   └── style.css
+├── img/
+│   └── portrait.jpg  # 个人证件照占位
+├── js/
+│   └── script.js
+└── index.html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>程可馨 - 学术简历</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="academic-header">
+        <div class="container">
+            < img src="img/portrait.jpg" alt="程可馨" class="portrait">
+            <h1>程可馨</h1>
+            <p class="subtitle">华中农业大学·植物营养学准研究生</p >
+        </div>
+    </header>
+
+    <nav class="academic-nav">
+        <div class="container">
+            教育背景
+            学术成果
+            荣誉奖项
+            联系方式
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="education" class="card">
+            <h2><i class="fas fa-graduation-cap"></i> 教育背景</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>江西农业大学 (2020-2024)</h3>
+                    <p>农业资源与环境专业 · 本科</p >
+                    <ul class="course-list">
+                        <li>核心课程：土壤学、植物生理学、基础生物化学、植物营养学</li>
+                        <li>GPA：3.6/4.0 | 排名：前15%</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="card">
+            <h2><i class="fas fa-flask"></i> 学术成果</h2>
+            <div class="achievement-item">
+                <h3>考研成绩</h3>
+                <table class="score-table">
+                    <tr><th>政治</th><th>外语</th><th>化学</th><th>专业课</th><th>总分</th></tr>
+                    <tr><td>61</td><td>53</td><td>131</td><td>122</td><td>367</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="honors" class="card">
+            <h2><i class="fas fa-award"></i> 荣誉奖项</h2>
+            <ul class="honor-list">
+                <li>六次专业三等奖学金 (2020-2023)</li>
+                <li>爱国知识竞赛一等奖 (2021)</li>
+                <li>SPSS数据分析竞赛三等奖 (2022)</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="card">
+            <h2><i class="fas fa-address-card"></i> 联系方式</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> 157-7796-2413</p >
+                <p><i class="fas fa-envelope"></i> clsu57779264139@163.com</p >
+                <p><i class="fas fa-map-marker-alt"></i> 江西省南昌市</p >
+            </div>
+        </section>
+    </main>
+
+    <footer class="academic-footer">
+        <p>© 2023 程可馨 · 学术简历</p >
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+:root {
+    --primary-color: #2C5F2D;  /* 深学术绿 */
+    --secondary-color: #97BC62;  /* 活力绿 */
+    --background-color: #F5F5F5;
+}
+
+body {
+    font-family: 'Segoe UI', '微软雅黑', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.academic-header {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.portrait {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.score-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.score-table th, 
+.score-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.academic-nav {
+    background: var(--secondary-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+}
+
+.academic-nav a {
+    color: white;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .academic-nav {
+        text-align: center;
+    }
+    
+    .academic-nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
